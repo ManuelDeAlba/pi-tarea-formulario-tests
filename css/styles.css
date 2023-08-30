@@ -1,0 +1,69 @@
+:root{
+    --btn-color: #05f;
+    --btn-color-hover: #04f;
+    --borde-color: #555;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+.boton{
+    display: block;
+    padding: .5rem 1rem;
+    background-color: var(--btn-color);
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+.boton:hover{ background-color: var(--btn-color-hover); }
+.titulo{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.form__apartado{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+.form__input{
+    width: 100%;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--borde-color);
+    border-radius: 3px;
+    outline: none;
+}
+
+.usuarios{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.usuario{
+    background-color: #eee;
+    padding: 1rem;
+    border-radius: 3px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a class="boton contenedor" href="/usuarios.php">Usuarios</a>
+
+    <!-- Se envia el formulario con el metodo post para no enviar los datos en la URL -->
+    <form class="form contenedor" action="form.php" method="post">
+        <div class="form__apartado">
+            <label for="nombre">Nombre:</label>
+            <input class="form__input" type="text" id="nombre" name="nombre" placeholder="John Doe" required>
+        </div>
+        
+        <div class="form__apartado">
+            <label for="correo">Correo:</label>
+            <input class="form__input" type="email" id="correo" name="correo" placeholder="example@domain.com" required>
+        </div>
+
+        <div class="form__apartado">
+            <label for="contrasena">Contraseña:</label>
+            <input class="form__input" type="password" id="contrasena" name="contrasena" placeholder="********" required>
+        </div>
+
+        <input class="boton" type="submit" value="Enviar">
+    </form>
+</body>
+</html>
